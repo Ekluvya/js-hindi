@@ -29,3 +29,27 @@ const myFunction = function() {
 console.log(typeof myFunction)
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (primitive), Heap (Non Primitive)
+
+let myYoutubeName = "Yash Khare"
+let anotherName = myYoutubeName
+
+console.log(anotherName)
+anotherName = "Prasang"
+console.log(myYoutubeName)
+console.log(anotherName)
+
+let user1 = {
+    name:"Yash",
+    email:"ykhare347@gmail.com",
+    gender:"Male"
+}
+
+let user2 = user1
+console.log(user1)
+user2.name = "Prasang"
+console.log(user2)
+console.log(user1)
